@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Function for navbar -->
+  <script>
+    // Hamburger function
+    function collapse() {
+      document.getElementsByClassName('menu-inside')[0].style.display = 'flex';
+      document.getElementById('toggler-ham').style.display = 'none';
+      document.getElementById('toggler-cross').style.display = 'inline-block';
+      // document.getElementsByTagName('nav')[0].style.position = 'relative';
+    }
+    // cross function
+    function shrink() {
+      document.getElementsByClassName('menu-inside')[0].style.display = 'none';
+      document.getElementById('toggler-ham').style.display = 'inline-block';
+      document.getElementById('toggler-cross').style.display = 'none';
+      // document.getElementsByTagName('nav')[0].style.position = 'relative';
+    }
+    function showmore() {
+      document.getElementById('para').innerText="Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit";
+      document.getElementById('vbtn').style.display = 'none';
+      // document.getElementsByTagName('nav')[0].style.position = 'relative';
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+
+    <div class="nav-heading">
+      <a href="#" class="toggler" id="toggler-ham" onclick="collapse()"><img src="./icons/hamburger.png" alt="menu"
+          srcset=""></a>
+      <a href="#" class="toggler toggler-reverse" id="toggler-cross" onclick="shrink()">
+        <img src="./icons/cross.png" alt="close" srcset=""></a>
+        <span id="navbar-name">NAME</span>
+    </div>
+    <div class="menu-item">
+      <div class="" id="option-heading">OPTION</div>
+      <div class="menu-inside">
+        <a href="#" class="item">HOME</a>
+        <a href="#" class="item">SHOP</a>
+        <a href="#" class="item">ABOUT</a>
+        <a href="#" class="item">INSIGHTS</a>
+        <a href="#" class="item">CONTACT</a>
+        <a href="#" class="item">OTHER</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="first">
+    <div id="join">
+      <h3>Lorem Ipsum</h3>
+      <br>
+      <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <br>
+      <a class="btn" id="vbtn" href="#" onclick="showmore()" role="button">VIEW MORE</a>
+    </div>
+    <div id="imagegiven"><img class="phone" src="phoneone.png"></div>
+  </div>
+  <br>
+  <div class="second">
+    <div class="title">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.</p>
+    </div>
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="phonetwo.jpg" alt="Card image cap">
+        <h5 class="card-title">CONTENT</h5>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="phonetwo.jpg" alt="Card image cap">
+        <h5 class="card-title">CONTENT</h5>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="phonetwo.jpg" alt="Card image cap">
+        <h5 class="card-title">CONTENT</h5>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

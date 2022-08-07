@@ -1,0 +1,138 @@
+/******** TAGS ****************/
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    /* height: 100%; */
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1rem;
+}
+a{
+    text-emphasis: none;
+    text-decoration: none;
+}
+p{
+    text-align: center;
+}
+/******** CLASS ****************/
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nav-heading{
+    font-weight: 600;
+    padding-left:1%;
+}
+.toggler{
+    display: none;
+}
+.toggler img{ /* hamburger and cross is an image*/
+    height: 20px;
+    width: auto;
+}
+.item{
+    color: white;
+    padding: .5rem;
+}
+.item:hover{
+    text-decoration: underline grey;
+
+}
+.phone{
+    max-width: 100%;
+}
+.card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 0px;
+}
+.card h5{
+    border: 1px;
+    background-color: rgb(216, 223, 223);
+    padding: 2%;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+.second{
+    padding: 2%;
+    float: left;
+}
+.title{
+    text-align: center;
+}
+.btn{
+    background-color: rgb(42, 42, 46);
+    border-radius: 0%;
+    color: aliceblue;
+    max-width: 150px;
+}
+/******** ID's ****************/
+
+#option-heading{
+    display: none;
+    font-weight: 600;
+}
+#navbar-name{
+    padding-left: 1rem;
+}
+#opt{
+    color: aliceblue;
+}
+#join{
+    float: left;
+    width: 50%;
+    padding: 5%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#imagegiven{
+    width: 50%;
+    float: right;
+}
+
+/******** Media Query ****************/
+
+@media only screen and (max-width: 1000px) { /*when width is <= 600*/
+    nav{
+        position: relative;
+    }
+    .menu-inside{
+        flex-direction: column;
+        display: none; /*default to hidden*/
+        align-items: flex-end;
+    }
+    #option-heading{
+        display: inline-block;
+        align-conten
+
+    }
+    .toggler{
+        display: inline-block;
+    }
+    .toggler-reverse{
+        display: none;
+    }
+    .item{
+        color: grey;
+    }
+}
